@@ -1,0 +1,12 @@
+query Shops{
+  shops(first: 3, orderBy: publishedAt_DESC) {
+    client {
+      name
+    }
+    products {
+      name
+    }
+    total
+    createdAt
+  }
+}

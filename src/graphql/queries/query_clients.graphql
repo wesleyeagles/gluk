@@ -1,0 +1,19 @@
+query Clients {
+  clients {
+    id
+    createdAt
+    email
+    name
+    phone
+    slug
+    adress
+    shops {
+      id
+      total
+      products {
+        id
+        name
+      }
+    }
+  }
+}

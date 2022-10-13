@@ -1,0 +1,16 @@
+query CategoryByName ($name: String) {
+  category(where: {name: $name}) {
+    id
+    name
+    products {
+      ... on Product {
+        id
+        name
+        price
+        inventory
+        createdAt
+        slug
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query ProductBySlug ($id: ID!) {
+  product(where: {id: $id}) {
+    id
+    inventory
+    name
+    price
+    slug
+    categories {
+        name
+    }
+  }
+}

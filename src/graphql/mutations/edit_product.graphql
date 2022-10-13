@@ -1,0 +1,11 @@
+mutation EditProduct ($id: ID!, $name: String, $price: Float, $inventory: Int, $productSlug: String) {
+  updateProduct(data: {name: $name, price: $price, inventory: $inventory, slug: $productSlug}, where: {id: $id}) {
+    id
+  }
+
+  publishProduct(where: {name: $name}, to: PUBLISHED) {
+    id
+  }
+}
+
+

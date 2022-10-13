@@ -1,0 +1,10 @@
+query ClientById ($id: ID!) {
+    client (where: {id: $id}) {
+        id
+        name
+        email
+        phone
+        adress
+        slug
+    }
+}

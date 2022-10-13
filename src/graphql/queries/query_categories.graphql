@@ -1,0 +1,14 @@
+query Categories {
+  categories {
+    createdAt
+    name
+    id
+    slug
+    products {
+      ... on Product {
+        id
+        name
+      }
+    }
+  }
+}

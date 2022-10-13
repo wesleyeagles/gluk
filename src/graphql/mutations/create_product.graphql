@@ -1,0 +1,10 @@
+mutation CreateProduct ($name: String!, $price: Float!, $inventory: Int!, $slug: String, $categoryName: String!) {
+  createProduct(data: {name: $name, price: $price, inventory: $inventory, slug: $slug, categories: {connect: {name: $categoryName}}}) {
+    id
+    name
+  }
+
+  publishProduct(where: {name: $name}, to: PUBLISHED) {
+    id
+  }
+}

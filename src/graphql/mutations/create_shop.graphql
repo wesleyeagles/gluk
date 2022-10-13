@@ -1,0 +1,10 @@
+mutation CreateShop($email: String!, $total: Float! $products: [ProductWhereUniqueInput!]) {
+  createShop(
+    data: {client: {connect: {email: $email}}, products: {connect: $products}, total: $total}
+  ) {
+    id
+  }
+    publishShop(where: {total: $total}, to: PUBLISHED) {
+    id
+  }
+}

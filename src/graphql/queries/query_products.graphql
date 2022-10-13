@@ -1,0 +1,12 @@
+query Products {
+  products {
+    id
+    name
+    inventory
+    price
+    slug
+    categories {
+      name
+    }
+  }
+}

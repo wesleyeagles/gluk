@@ -1,0 +1,9 @@
+mutation CreateClient ($name: String!, $phone: String!, $email: String!, $adress: String! $slug: String!) {
+  createClient(data: {name: $name, phone: $phone, email: $email, adress: $adress, slug: $slug}) {
+    id
+  }
+
+  publishClient(where: {slug: $slug}, to: PUBLISHED) {
+    id
+  }
+}

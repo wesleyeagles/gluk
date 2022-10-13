@@ -1,0 +1,5 @@
+mutation DeleteProduct ($slug: String) {
+  deleteProduct(where: {slug: $slug}) {
+    id
+  }
+}

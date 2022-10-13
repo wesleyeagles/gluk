@@ -1,0 +1,12 @@
+mutation EditClient ($id: ID!, $name: String, $phone: String, $email: String, $adress: String, $slug: String) {
+  updateClient(
+    data: {name: $name, phone: $phone, email: $email, adress: $adress, slug: $slug}
+    where: {id: $id}
+  ) {
+    id
+  }
+  
+  publishClient(where: {id: $id}, to: PUBLISHED) {
+    id
+  }
+}

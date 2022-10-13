@@ -1,0 +1,9 @@
+mutation CreateCategory ($name: String!, $slug: String!) {
+  createCategory(data: {name: $name, slug: $slug}) {
+    id
+  }
+
+  publishCategory(where: {name: $name}, to: PUBLISHED) {
+    id
+  }
+}

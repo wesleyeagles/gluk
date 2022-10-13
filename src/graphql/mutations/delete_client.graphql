@@ -1,0 +1,5 @@
+mutation DeleteClient($id: ID!) {
+  deleteClient(where: {id: $id}) {
+    id
+  }
+}
