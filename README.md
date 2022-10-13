@@ -54,9 +54,8 @@ Windows:
 Para iniciar siga estas etapas:
 
 ```
+Crie um arquivo .env.local na pasta raiz do projeto
+Os valores podem ser visualizados no arquivo env.example.md
 <npm run dev ou yarn run dev>
 ```
-#OBS
-
-Todas as varíaveis estão já preenchidas
 
