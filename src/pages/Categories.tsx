@@ -11,7 +11,6 @@ import ptBR from 'date-fns/locale/pt-BR'
 // Icons Import //
 
 import { MdDeleteForever } from 'react-icons/md'
-import { GoDiffAdded } from 'react-icons/go'
 import { CreateCategory } from './CreateCategory'
 
 export const Categories = () => {
